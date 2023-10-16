@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+.boton--aceptar {
+  width: 500px;
+  height: 200px;
+  font-family: "Open Sans";
+  background-color: #fff;
+  text-align: center;
+  color: red;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+/*# sourceMappingURL=style.css.map */
