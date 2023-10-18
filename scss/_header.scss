@@ -1,0 +1,108 @@
+
+.navbar {
+    background-color: map-get($colores, principal-color);
+}
+
+// estilos del logo
+
+.nav__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    .logo__img {
+        height: 30px;
+        margin-right: .2em;
+    }
+    .logo__p {
+        font-family: map-get($fuentes, title-font);
+        color: map-get($colores, title-color);
+        font-size: 25px;
+        margin-bottom: 0;
+        &:hover{
+            color: #aaa;
+        }
+    }
+}
+
+// estilo del menu hamburguesa
+
+.navbar-toggler {
+    filter: invert(1);
+}
+
+
+// estilos de la barra de navegación
+.nav-item {
+    margin-bottom: .6rem;
+}
+
+
+.nav__link {
+    text-decoration: none;
+    color: map-get($colores, title-color);
+    font-family: map-get($fuentes, principal-font);
+    &:hover{
+        color: #aaa;
+    }
+}
+
+
+// media queries
+
+
+@media (min-width: 576px) {
+    .nav__container {
+        margin: 0 1rem;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .nav__container {
+        margin: 0 2rem;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .nav-item {
+        margin-bottom: 0;
+    }
+    .nav__ul {
+        width: 90%;
+        justify-content: center;
+        .nav-item {
+            width: 20%;
+            text-align: center;
+        }
+    }
+    .nav__link--account {
+        width: 10%;
+        text-align: end;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .nav__container {
+        margin: 0 4rem;
+    }
+    .nav__ul {
+        .nav-item {
+            width: 18%;
+        }
+    }
+}
+
+
+@media (min-width: 1400px) {
+    .nav__container {
+        margin: 0 6rem;
+    }
+    .nav__ul {
+        .nav-item {
+            width: 15%;
+        }
+    }
+}
