@@ -4,6 +4,6 @@ $fuentes: (
 );
 
 $colores: (
-    principal-color: #d03ec6,
-    title-color: #fff,
+    principal-color: $principal-color,
+    title-color: $title-color,
 );

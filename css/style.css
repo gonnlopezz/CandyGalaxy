@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 .navbar {
-  background-color: #d03ec6;
+  background-color: #41238d;
 }
 
 .nav__logo {
@@ -83,6 +83,31 @@
   .nav__ul .nav-item {
     width: 15%;
   }
+}
+.index__main {
+  background-color: #a25ce0;
+  padding: 1rem;
+}
+.index__main .section__1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.index__main .section__1 img {
+  height: 450px;
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 0.8rem;
+}
+.index__main .section__1 .title {
+  text-align: center;
+  color: #fff;
+  font-family: "Emilys Candy";
+}
+.index__main .section__1 .text {
+  color: #fff;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
