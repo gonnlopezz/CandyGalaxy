@@ -1,12 +1,12 @@
-// @mixin botones($font-family, $background-color) {
-//     width: 500px;
-//     height: 200px;
-//     font-family: $font-family;
-//     background-color: $background-color;
-//     text-align: center;
-//     color: red;
-//     border-radius: 20px;
-//     border: 1px solid black;
-// }
+@mixin botones($background-color, $font-family, $color) {
+    width: 180px;
+    height: 45px;
+    font-family: $font-family;
+    background-color: $background-color;
+    text-align: center;
+    color: $color;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
 
 

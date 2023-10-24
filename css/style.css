@@ -28,25 +28,154 @@
   filter: invert(1);
 }
 
+.nav__ul--account {
+  padding: 0;
+  margin-bottom: 0;
+}
+
 .nav-item {
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.8rem;
+  text-align: center;
 }
 
 .nav__link {
   text-decoration: none;
+  list-style: none;
+  text-align: center;
   color: #fff;
-  font-family: "Open Sans";
+  font-family: "Emilys Candy";
 }
 .nav__link:hover {
   color: #aaa;
 }
 
+.nav__link--account {
+  padding-left: 0;
+  padding: 0;
+}
+
+footer {
+  padding: 0.5rem;
+  background-color: #41238d;
+}
+footer .main__content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+footer .main__content a {
+  text-align: center;
+  text-decoration: none;
+  min-width: 50px;
+  margin: 0.5rem 0.5rem;
+  color: #fff;
+}
+footer .social__medias {
+  text-align: center;
+}
+footer .social__medias a {
+  text-decoration: none;
+}
+footer .social__medias .icon {
+  filter: invert(1);
+  height: 30px;
+  margin: 0 0.5rem;
+  width: 30px;
+}
+footer .copyright {
+  font-size: 12px;
+  margin: 0;
+  margin-top: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 105%;
+  min-height: 100%;
+  transform: translateX(calc((100% - 100vw) / 2));
+  z-index: -2;
+}
+
+.index__main {
+  padding: 1rem;
+}
+.index__main .section__1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.index__main .section__1 .hero {
+  height: 450px;
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 0.8rem;
+}
+.index__main .section__1 .title {
+  text-align: center;
+  color: #fff;
+  font-family: "Emilys Candy";
+}
+.index__main .section__1 .text {
+  color: #fff;
+  text-align: center;
+}
+.index__main .section__2 .title {
+  color: #fff;
+  font-family: "Emilys Candy";
+  text-align: center;
+}
+.index__main .section__2 .card__container {
+  border-radius: 30px;
+}
+.index__main .section__2 .card__container .card__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px;
+  background-color: #ddd;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding: 5px;
+  padding-bottom: 15px;
+  margin: 2rem auto;
+}
+.index__main .section__2 .card__container .card__item .card__img {
+  border-radius: 30px;
+  height: 350px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.index__main .section__2 .card__container .card__item .card__text {
+  width: 90%;
+}
+.index__main .section__2 .card__container .card__item .button__watch {
+  width: 180px;
+  height: 45px;
+  font-family: "Emilys Candy";
+  background-color: #a25ce0;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
+
 @media (min-width: 576px) {
+  main {
+    padding: 1rem;
+  }
   .nav__container {
     margin: 0 1rem;
   }
 }
 @media (min-width: 768px) {
+  main {
+    margin: 1rem;
+  }
   .nav__container {
     margin: 0 2rem;
   }
@@ -67,8 +196,30 @@
     width: 10%;
     text-align: end;
   }
+  .index__main .section__1 {
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+  }
+  .index__main .section__1 .hero {
+    height: 600px;
+    width: 600px;
+    margin-right: 6rem;
+  }
+  .index__main .section__1 .text__container {
+    width: 50%;
+  }
+  .index__main .section__2 .card__container {
+    display: flex;
+  }
+  .index__main .section__2 .card__container .card__item {
+    width: 300px;
+  }
 }
 @media (min-width: 1200px) {
+  main {
+    margin: 2rem 4rem;
+  }
   .nav__container {
     margin: 0 4rem;
   }
@@ -77,37 +228,15 @@
   }
 }
 @media (min-width: 1400px) {
+  main {
+    margin: 2rem 5rem;
+  }
   .nav__container {
     margin: 0 6rem;
   }
   .nav__ul .nav-item {
     width: 15%;
   }
-}
-.index__main {
-  background-color: #a25ce0;
-  padding: 1rem;
-}
-.index__main .section__1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-.index__main .section__1 img {
-  height: 450px;
-  width: 100%;
-  border-radius: 15px;
-  margin-bottom: 0.8rem;
-}
-.index__main .section__1 .title {
-  text-align: center;
-  color: #fff;
-  font-family: "Emilys Candy";
-}
-.index__main .section__1 .text {
-  color: #fff;
-  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

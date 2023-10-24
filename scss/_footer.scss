@@ -1,0 +1,36 @@
+footer {
+    padding: .5rem;
+    background-color: map-get($colores, principal-color);
+    .main__content {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+        a {
+            text-align: center;
+            text-decoration: none;
+            min-width: 50px;
+            margin: .5rem .5rem;
+            color: map-get($colores, title-color);
+        }
+    }
+    .social__medias {
+        text-align: center;
+        a {
+            text-decoration: none;
+        }
+        .icon {
+            filter: invert(1);
+            height: 30px;
+            margin: 0 .5rem;
+            width: 30px;
+        }
+    }
+    .copyright {
+        font-size: 12px;
+        margin: 0;
+        margin-top: 1rem;
+        text-align: center;
+        color: map-get($colores, title-color);
+    }
+}
+

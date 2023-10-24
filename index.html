@@ -46,72 +46,82 @@
               <a class="nav__link" href="./pages/contacto.html">Contacto</a>
             </li>
           </ul>
-          <a class="nav__link nav__link--account" href="./pages/cuenta.html">Cuenta</a>
+          <ul class="nav__ul--account">
+            <li class="nav__link"><a class="nav__link nav__link--account" href="./pages/cuenta.html">Cuenta</a></li>
+          </ul>
         </div>
       </div>
     </nav>
   </header>
 
+  <video autoplay muted loop id="myVideo">
+    <source src="./media/background.mp4" type="video/mp4">
+  </video>
   <main class="index__main">
     <!-- primera sección -->
     <section class="section__1">
-        <img src="./media/hero.jpeg" alt="Dulcería Candy">
+      <img class="hero" src="./media/hero.jpeg" alt="Dulcería Candy">
+      <div class="text__container">
         <h1 class="title">Explora un mundo de dulces y diversión</h1>
         <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et explicabo dolore recusandae, non
-          quis corporis ab ea. Saepe, dignissimos dicta aperiam inventore, sit hic quibusdam numquam natus laborum,
-          tempora atque?</p>
+        quis corporis ab ea. Saepe, dignissimos dicta aperiam inventore, sit hic quibusdam numquam natus laborum,
+        tempora atque?</p>
+      </div>
     </section>
     <section class="section__2">
       <h2 class="title">Tenemos los productos de mejor calidad de la zona</h2>
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="card__container">
-          <div class="carousel-item active">
-            <img src="./media/chocolate-1.jpeg" class="d-block w-100" alt="...">
-              <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ab, cumque natus sed nihil omnis ipsam
-                beatae, nulla obcaecati blanditiis atque doloremque voluptatibus. Fuga excepturi quo mollitia atque, nam
-                pariatur?</p>
-              <button class="button__watch">Ver productos</button>
-            </div>
-          </div>
-          <div class="card__container">
-          <div class="carousel-item">
-            <img src="./media/candy-2.jpeg" class="d-block w-100" alt="...">
-              <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ab, cumque natus sed nihil omnis ipsam
-                beatae, nulla obcaecati blanditiis atque doloremque voluptatibus. Fuga excepturi quo mollitia atque, nam
-                pariatur?</p>
-              <button class="button__watch">Ver productos</button>
-            </div>
-          </div>
-          <div class="card__container">
-          <div class="carousel-item">
-            <img src="./media/gomitas-3.jpeg" class="d-block w-100" alt="...">
-              <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ab, cumque natus sed nihil omnis ipsam
-                beatae, nulla obcaecati blanditiis atque doloremque voluptatibus. Fuga excepturi quo mollitia atque, nam
-                pariatur?</p>
-              <button class="button__watch">Ver productos</button>
-            </div>
-          </div>
+      <div class="card__container">
+        <div class="card__item">
+          <img class="card__img" src="./media/chocolate-3.jpeg" alt="">
+          <h3>Chocolates</h3>
+          <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia beatae voluptate quam,
+            commodi atque illum cumque ut fugiat praesentium consectetur natus suscipit molestiae quas magnam? Commodi
+            eligendi id dignissimos corrupti! </p>
+          <button class="button__watch">Ver Productos</button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="card__item">
+          <img class="card__img" src="./media/candy-2.jpeg" alt="">
+          <h3>Golosinas</h3>
+          <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia beatae voluptate quam,
+            commodi atque illum cumque ut fugiat praesentium consectetur natus suscipit molestiae quas magnam? Commodi
+            eligendi id dignissimos corrupti! </p>
+          <button class="button__watch">Ver Productos</button>
+        </div>
+        <div class="card__item">
+          <img class="card__img" src="./media/gomitas-1.jpeg" alt="">
+          <h3>Gomitas</h3>
+          <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia beatae voluptate quam,
+            commodi atque illum cumque ut fugiat praesentium consectetur natus suscipit molestiae quas magnam? Commodi
+            eligendi id dignissimos corrupti! </p>
+          <button class="button__watch">Ver Productos</button>
+        </div>
       </div>
     </section>
-    <section>
-      
-    </section>
-    <article class="index__article">
-      <h2>¿Quieres saber mas sobre nosotros y de nuestra historia?</h2>
-      <button class="button__watch">Conócenos aquí</button>
-    </article>
   </main>
 
+  <footer>
+    <div class="main__content">
+      <a href="">About Us</a>
+      <a href="">Contact Us</a>
+      <a href="">Afiliates</a>
+      <a href="">Resources</a>
+    </div>
+    <div class="social__medias">
+      <a href="">
+        <img class="icon" src="./media/icon/facebook.png" alt="facebook">
+      </a>
+      <a href="">
+        <img class="icon" src="./media/icon/twitter.png" alt="twitter">
+      </a>
+      <a href="">
+        <img class="icon" src="./media/icon/instagram.png" alt="instagram">
+      </a>
+      <a href="">
+        <img class="icon" src="./media/icon/tiktok.png" alt="tiktok">
+      </a>
+    </div>
+    <p class="copyright">©Copyright, All rights reserved.</p>
+  </footer>
 
 
   <!-- script de bootstrap -->
