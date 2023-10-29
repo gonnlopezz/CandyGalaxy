@@ -3,53 +3,50 @@
 .navbar {
   background-color: #41238d;
 }
-
-.nav__logo {
+.navbar .nav__logo {
   display: flex;
   flex-direction: row;
   align-items: center;
   text-decoration: none;
 }
-.nav__logo .logo__img {
+.navbar .nav__logo .logo__img {
   height: 30px;
   margin-right: 0.2em;
 }
-.nav__logo .logo__p {
+.navbar .nav__logo .logo__p {
   font-family: "Emilys Candy";
   color: #fff;
   font-size: 25px;
   margin-bottom: 0;
 }
-.nav__logo .logo__p:hover {
+.navbar .nav__logo .logo__p:hover {
   color: #aaa;
 }
-
-.navbar-toggler {
+.navbar .navbar-toggler {
   filter: invert(1);
 }
-
-.nav__ul--account {
+.navbar .navbar-toggler .navbar-toggler-icon {
+  width: 25px;
+}
+.navbar .nav__ul--account {
   padding: 0;
   margin-bottom: 0;
 }
-
-.nav-item {
+.navbar .nav-item {
   margin-bottom: 0.8rem;
   text-align: center;
 }
-
-.nav__link {
+.navbar .nav__link {
   text-decoration: none;
   list-style: none;
   text-align: center;
   color: #fff;
   font-family: "Emilys Candy";
 }
-.nav__link:hover {
+.navbar .nav__link:hover {
   color: #aaa;
 }
-
-.nav__link--account {
+.navbar .nav__link--account {
   padding-left: 0;
   padding: 0;
 }
@@ -107,26 +104,33 @@ footer .copyright {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .index__main .section__1 .hero {
-  height: 450px;
+  height: 500px;
   width: 100%;
+  max-width: 450px;
   border-radius: 15px;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.2rem;
 }
 .index__main .section__1 .title {
-  text-align: center;
-  color: #fff;
   font-family: "Emilys Candy";
+  font-size: 2rem;
+  text-align: center;
+  max-width: 450px;
+  margin-bottom: 0.5rem;
+  color: #fff;
 }
 .index__main .section__1 .text {
+  font-size: 1.4rem;
   color: #fff;
   text-align: center;
+  max-width: 450px;
 }
 .index__main .section__2 .title {
   color: #fff;
   font-family: "Emilys Candy";
+  font-size: 2rem;
   text-align: center;
 }
 .index__main .section__2 .card__container {
@@ -136,24 +140,36 @@ footer .copyright {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 2rem auto;
+  width: 90%;
   max-width: 350px;
+  height: 700px;
   background-color: #ddd;
   border: 1px solid #ddd;
   border-radius: 30px;
   padding: 5px;
   padding-bottom: 15px;
-  margin: 2rem auto;
 }
 .index__main .section__2 .card__container .card__item .card__img {
   border-radius: 30px;
-  height: 350px;
+  height: 60%;
   margin-bottom: 10px;
   width: 100%;
 }
+.index__main .section__2 .card__container .card__item .card__title {
+  font-size: 1.5rem;
+  height: 2%;
+}
 .index__main .section__2 .card__container .card__item .card__text {
+  height: 28%;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: start;
+  padding: 1rem 0;
   width: 90%;
 }
 .index__main .section__2 .card__container .card__item .button__watch {
+  height: 10%;
   width: 180px;
   height: 45px;
   font-family: "Emilys Candy";
@@ -170,6 +186,10 @@ footer .copyright {
   }
   .nav__container {
     margin: 0 1rem;
+  }
+  .index__main .section__1 .hero {
+    max-width: 550px;
+    height: 600px;
   }
 }
 @media (min-width: 768px) {
@@ -190,6 +210,7 @@ footer .copyright {
   }
   .nav__ul .nav-item {
     width: 20%;
+    margin: 0;
     text-align: center;
   }
   .nav__link--account {
@@ -197,23 +218,31 @@ footer .copyright {
     text-align: end;
   }
   .index__main .section__1 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: start;
   }
   .index__main .section__1 .hero {
-    height: 600px;
-    width: 600px;
-    margin-right: 6rem;
-  }
-  .index__main .section__1 .text__container {
     width: 50%;
+  }
+  .index__main .section__1 .title {
+    font-size: 2.5rem;
+  }
+  .index__main .section__1 .text {
+    font-size: 1.6rem;
+  }
+  .index__main .section__2 .title {
+    font-size: 2.5rem;
   }
   .index__main .section__2 .card__container {
     display: flex;
   }
   .index__main .section__2 .card__container .card__item {
-    width: 300px;
+    width: 30%;
+    max-width: 400px;
   }
 }
 @media (min-width: 1200px) {
@@ -236,6 +265,21 @@ footer .copyright {
   }
   .nav__ul .nav-item {
     width: 15%;
+  }
+  .index__main .section__1 .title {
+    font-size: 3rem;
+  }
+  .index__main .section__1 .text {
+    font-size: 1.8rem;
+  }
+  .index__main .section__2 .title {
+    font-size: 3rem;
+  }
+  .index__main .section__2 .card__container .card__item .card__title {
+    font-size: 1.7rem;
+  }
+  .index__main .section__2 .card__container .card__item .card__text {
+    font-size: 1.2rem;
   }
 }
 

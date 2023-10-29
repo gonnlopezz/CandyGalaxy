@@ -1,63 +1,63 @@
 
 .navbar {
     background-color: map-get($colores, principal-color);
-}
-
-// estilos del logo
-
-.nav__logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-decoration: none;
-    .logo__img {
-        height: 30px;
-        margin-right: .2em;
+    // estilos del logo
+    .nav__logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-decoration: none;
+        .logo__img {
+            height: 30px;
+            margin-right: .2em;
+        }
+        .logo__p {
+            font-family: map-get($fuentes, title-font);
+            color: map-get($colores, title-color);
+            font-size: 25px;
+            margin-bottom: 0;
+            &:hover{
+                color: #aaa;
+            }
+        }
     }
-    .logo__p {
-        font-family: map-get($fuentes, title-font);
-        color: map-get($colores, title-color);
-        font-size: 25px;
+    
+    // estilo del menu hamburguesa
+    .navbar-toggler {
+        filter: invert(1);
+        .navbar-toggler-icon {
+            width: 25px;
+        }
+    }
+
+    // estilos de la barra de navegación
+    .nav__ul--account {
+        padding: 0;
         margin-bottom: 0;
+    }
+    
+    .nav-item {
+        margin-bottom: .8rem;
+        text-align: center;
+    }
+    
+    .nav__link {
+        text-decoration: none;
+        list-style: none;
+        text-align: center;
+        color: map-get($colores, title-color);
+        font-family: map-get($fuentes, title-font);
         &:hover{
             color: #aaa;
         }
     }
-}
-
-// estilo del menu hamburguesa
-
-.navbar-toggler {
-    filter: invert(1);
-}
-
-
-// estilos de la barra de navegación
-
-.nav__ul--account {
-    padding: 0;
-    margin-bottom: 0;
-}
-
-.nav-item {
-    margin-bottom: .8rem;
-    text-align: center;
-}
-
-
-.nav__link {
-    text-decoration: none;
-    list-style: none;
-    text-align: center;
-    color: map-get($colores, title-color);
-    font-family: map-get($fuentes, title-font);
-    &:hover{
-        color: #aaa;
+    .nav__link--account {
+        padding-left: 0;
+        padding: 0;
     }
 }
 
-.nav__link--account {
-    padding-left: 0;
-    padding: 0;
-}
+
+
+
 

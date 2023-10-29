@@ -9,6 +9,15 @@
     .nav__container {
         margin: 0 1rem;
     }
+    // estilos del index
+    .index__main {
+        .section__1 {
+            .hero {
+                max-width: 550px;
+                height: 600px;
+            }
+        }
+    }
 
     
 }
@@ -40,6 +49,7 @@
         justify-content: center;
         .nav-item {
             width: 20%;
+            margin: 0;
             text-align: center;
         }
     }
@@ -51,23 +61,32 @@
     // estilos del index
     .index__main {
         .section__1 {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-between;
             align-items: start;
             .hero {
-                height: 600px;
-                width: 600px;
-                margin-right: 6rem;
-            }
-            .text__container {
                 width: 50%;
             }
+            .title {
+             font-size: map-get($font-sizes, m-title);
+            }
+            .text {
+                font-size: map-get($font-sizes, m-text);
+            }
+            
         }
         .section__2 {
+            .title {
+            font-size: map-get($font-sizes, m-title);
+            }
             .card__container {
                 display: flex;
                 .card__item {
-                    width: 300px;
+                    width: 30%;
+                    max-width: 400px;
                 }
             }
         }
@@ -107,6 +126,34 @@
     .nav__ul {
         .nav-item {
             width: 15%;
+        }
+    }
+
+    // estilos del index
+
+    .index__main {
+        .section__1 {
+            .title {
+                font-size: map-get($font-sizes, l-title);
+               }
+               .text {
+                   font-size: map-get($font-sizes, l-text);
+               }
+        }
+        .section__2 {
+            .title {
+                font-size: map-get($font-sizes, l-title);
+            }
+            .card__container {
+                .card__item {
+                    .card__title {
+                        font-size: 1.7rem;
+                    }
+                    .card__text {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
         }
     }
 
