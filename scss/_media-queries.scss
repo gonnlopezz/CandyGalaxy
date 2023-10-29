@@ -91,6 +91,20 @@
             }
         }
     }
+    // estilos de la vista productos
+
+    
+    .products__main {
+        .title {
+            font-size: map-get($font-sizes, m-title);
+           }
+        .products__section {
+            .section__title {
+                font-size: map-get($font-sizes, m-title);
+            }
+        }
+           
+    }
 }
 
 // media queries > 1200 <= 1400
@@ -157,5 +171,19 @@
         }
     }
 
+    // estilos de la vista productos
+
+    
+    .products__main {
+        .title {
+            font-size: map-get($font-sizes, l-title);
+           }
+        .products__section {
+            .section__title {
+                font-size: map-get($font-sizes, l-title);
+            }
+        }
+    }
 }
+
 

@@ -1,9 +1,25 @@
-body {
+.products__grid--container {
     display: grid;
-    grid-template-rows: 60px 1fr 150px;
+    grid-template-columns: repeat(auto-fit, 320px);
+    grid-template-rows: repeat(auto-fit, 600px);
+    grid-gap: 4rem;
+    justify-content: center;
 }
 
 
-main {
-    min-height: 80vh;
+@media (min-width: 847px) {
+
+    .products__grid--container {
+        grid-gap: 6rem;
+        justify-content: center;
+    }
+}
+
+
+@media (min-width: 1470px) {
+
+    .products__grid--container {
+        grid-gap: 12rem;
+        justify-content: center;
+    }
 }

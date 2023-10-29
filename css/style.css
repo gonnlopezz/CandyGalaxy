@@ -1,16 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
-body {
+.products__grid--container {
   display: grid;
-  grid-template-rows: 60px 1fr 150px;
+  grid-template-columns: repeat(auto-fit, 320px);
+  grid-template-rows: repeat(auto-fit, 600px);
+  grid-gap: 4rem;
+  justify-content: center;
 }
 
-main {
-  min-height: 80vh;
+@media (min-width: 847px) {
+  .products__grid--container {
+    grid-gap: 6rem;
+    justify-content: center;
+  }
 }
-
+@media (min-width: 1470px) {
+  .products__grid--container {
+    grid-gap: 12rem;
+    justify-content: center;
+  }
+}
 .navbar {
-  height: 100%;
   background-color: #41238d;
 }
 .navbar .nav__logo {
@@ -191,6 +201,74 @@ footer .copyright {
   border: 1px solid #fff;
 }
 
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 105%;
+  min-height: 100%;
+  transform: translateX(calc((100% - 100vw) / 2));
+  z-index: -2;
+}
+
+.products__main .title {
+  text-align: center;
+  font-family: "Emilys Candy";
+  font-size: 2rem;
+  color: #fff;
+}
+.products__main .products__section {
+  width: 90%;
+  margin: 4rem auto;
+}
+.products__main .products__section .section__title {
+  text-align: center;
+  font-family: "Emilys Candy";
+  font-size: 2rem;
+  color: #fff;
+}
+.products__main .products__section .product__card {
+  margin: 2rem auto;
+  width: 100%;
+  height: 550px;
+  background-color: #ddd;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.products__main .products__section .product__card .img__container {
+  width: 100%;
+}
+.products__main .products__section .product__card .img__container .product__img {
+  width: 100%;
+  border-radius: 30px 30px 0 0;
+  height: 300px;
+}
+.products__main .products__section .product__card .img__container .card__title {
+  text-align: center;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+.products__main .products__section .product__card .price {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.products__main .products__section .product__card .button__buy {
+  width: 180px;
+  height: 45px;
+  font-family: "Emilys Candy";
+  background-color: #335e42;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  width: 70%;
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 576px) {
   main {
     padding: 1rem;
@@ -255,6 +333,12 @@ footer .copyright {
     width: 30%;
     max-width: 400px;
   }
+  .products__main .title {
+    font-size: 2.5rem;
+  }
+  .products__main .products__section .section__title {
+    font-size: 2.5rem;
+  }
 }
 @media (min-width: 1200px) {
   main {
@@ -291,6 +375,12 @@ footer .copyright {
   }
   .index__main .section__2 .card__container .card__item .card__text {
     font-size: 1.2rem;
+  }
+  .products__main .title {
+    font-size: 3rem;
+  }
+  .products__main .products__section .section__title {
+    font-size: 3rem;
   }
 }
 
