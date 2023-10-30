@@ -1,14 +1,17 @@
 // media queries > 576 <= 768
 
 @media (min-width: 576px) {
+
     // estilos globales
     main {
         padding: 1rem;
     }
+
     // estilos del header
     .nav__container {
         margin: 0 1rem;
     }
+
     // estilos del index
     .index__main {
         .section__1 {
@@ -19,40 +22,46 @@
         }
     }
 
-    
+
 }
 
 
 // media queries > 768 <= 992
 
 @media (min-width: 768px) {
+
     // estilos globales
     main {
         margin: 1rem;
     }
+
     // estilos del header
     .nav__container {
         margin: 0 2rem;
     }
-    
+
 }
 
 // media queries > 992 <= 1200
 
 @media (min-width: 992px) {
+
     // estilos del header
     .nav-item {
         margin-bottom: 0;
     }
+
     .nav__ul {
         width: 90%;
         justify-content: center;
+
         .nav-item {
             width: 20%;
             margin: 0;
             text-align: center;
         }
     }
+
     .nav__link--account {
         width: 10%;
         text-align: end;
@@ -67,23 +76,29 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: start;
+
             .hero {
                 width: 50%;
             }
+
             .title {
-             font-size: map-get($font-sizes, m-title);
+                font-size: map-get($font-sizes, m-title);
             }
+
             .text {
                 font-size: map-get($font-sizes, m-text);
             }
-            
+
         }
+
         .section__2 {
             .title {
-            font-size: map-get($font-sizes, m-title);
+                font-size: map-get($font-sizes, m-title);
             }
+
             .card__container {
                 display: flex;
+
                 .card__item {
                     width: 30%;
                     max-width: 400px;
@@ -91,52 +106,93 @@
             }
         }
     }
+
     // estilos de la vista productos
 
-    
+
     .products__main {
         .title {
             font-size: map-get($font-sizes, m-title);
-           }
+        }
+
         .products__section {
             .section__title {
                 font-size: map-get($font-sizes, m-title);
             }
         }
-           
+
     }
+
+
 }
 
 // media queries > 1200 <= 1400
 
 @media (min-width: 1200px) {
+
     // estilos globales
     main {
         margin: 2rem 4rem;
     }
+
     // estilos del header
     .nav__container {
         margin: 0 4rem;
     }
+
     .nav__ul {
         .nav-item {
             width: 18%;
         }
     }
-    
+
+    // estilos de la vista productos
+    .about__main {
+        max-width: 1600px;
+        .about__section {
+            flex-direction: row;
+            justify-content: space-around;
+            .section__img {
+                width: 40%;
+                height: 700px;
+            }
+            .text__container {
+                width: 55%;
+                .section__title {
+                    font-size: map-get($font-sizes, m-title);
+                    margin-bottom: 5rem;
+                }
+                .text {
+                    font-size: map-get($font-sizes, m-text);
+                }
+            }
+        }
+        .section__chicken {
+            .text__container {
+                order: 1;
+            }
+            .section__img {
+                order: 2;
+            }
+        }
+    }
+
 }
 
 // media queries > 1400
 
 @media (min-width: 1400px) {
+
     // estilos globales
     main {
         margin: 2rem 5rem;
     }
+
     // estilos del header
     .nav__container {
         margin: 0 6rem;
     }
+
     .nav__ul {
         .nav-item {
             width: 15%;
@@ -149,20 +205,24 @@
         .section__1 {
             .title {
                 font-size: map-get($font-sizes, l-title);
-               }
-               .text {
-                   font-size: map-get($font-sizes, l-text);
-               }
+            }
+
+            .text {
+                font-size: map-get($font-sizes, l-text);
+            }
         }
+
         .section__2 {
             .title {
                 font-size: map-get($font-sizes, l-title);
             }
+
             .card__container {
                 .card__item {
                     .card__title {
                         font-size: 1.7rem;
                     }
+
                     .card__text {
                         font-size: 1.2rem;
                     }
@@ -173,17 +233,35 @@
 
     // estilos de la vista productos
 
-    
+
     .products__main {
         .title {
             font-size: map-get($font-sizes, l-title);
-           }
+        }
+
         .products__section {
             .section__title {
                 font-size: map-get($font-sizes, l-title);
             }
         }
     }
+
+    // estilos de la vista about
+
+    .about__main {
+        .title {
+            font-size: map-get($font-sizes, l-title);
+        }
+        .about__section {
+            .text__container {
+                .section__title {
+                    font-size: map-get($font-sizes, l-title);
+                }
+                .text {
+                    font-size: map-get($font-sizes, l-text);
+
+                }
+            }
+        }
+    }
 }
-
-

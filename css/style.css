@@ -269,6 +269,41 @@ footer .copyright {
   margin-bottom: 1rem;
 }
 
+.about__main {
+  margin: 1rem auto;
+  width: 90%;
+  max-width: 800px;
+}
+.about__main .title {
+  font-family: "Emilys Candy";
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.about__main .about__section {
+  display: flex;
+  flex-direction: column;
+}
+.about__main .about__section .section__img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+.about__main .about__section .section__title {
+  font-family: "Emilys Candy";
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
+.about__main .about__section .text__container .text {
+  font-size: 1.4rem;
+  color: #fff;
+}
+.about__main .section__history {
+  margin-bottom: 4rem;
+}
+
 @media (min-width: 576px) {
   main {
     padding: 1rem;
@@ -350,6 +385,33 @@ footer .copyright {
   .nav__ul .nav-item {
     width: 18%;
   }
+  .about__main {
+    max-width: 1600px;
+  }
+  .about__main .about__section {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .about__main .about__section .section__img {
+    width: 40%;
+    height: 700px;
+  }
+  .about__main .about__section .text__container {
+    width: 55%;
+  }
+  .about__main .about__section .text__container .section__title {
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+  }
+  .about__main .about__section .text__container .text {
+    font-size: 1.6rem;
+  }
+  .about__main .section__chicken .text__container {
+    order: 1;
+  }
+  .about__main .section__chicken .section__img {
+    order: 2;
+  }
 }
 @media (min-width: 1400px) {
   main {
@@ -381,6 +443,15 @@ footer .copyright {
   }
   .products__main .products__section .section__title {
     font-size: 3rem;
+  }
+  .about__main .title {
+    font-size: 3rem;
+  }
+  .about__main .about__section .text__container .section__title {
+    font-size: 3rem;
+  }
+  .about__main .about__section .text__container .text {
+    font-size: 1.8rem;
   }
 }
 
