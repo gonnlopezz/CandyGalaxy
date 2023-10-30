@@ -4,14 +4,35 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, 320px);
   grid-template-rows: repeat(auto-fit, 600px);
-  grid-gap: 4rem;
+  grid-gap: 7rem;
   justify-content: center;
+}
+
+.contact__grid {
+  display: grid;
+  gap: 6rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "contact__section" "contact__aside";
+}
+.contact__grid .contact__section {
+  grid-area: contact__section;
+}
+.contact__grid .contact__aside {
+  grid-area: contact__aside;
 }
 
 @media (min-width: 847px) {
   .products__grid--container {
     grid-gap: 6rem;
     justify-content: center;
+  }
+}
+@media (min-width: 992px) {
+  .contact__grid {
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "contact__section contact__section contact__aside";
   }
 }
 @media (min-width: 1470px) {
@@ -198,7 +219,7 @@ footer .copyright {
   text-align: center;
   color: #fff;
   border-radius: 5px;
-  border: 1px solid #fff;
+  border: none;
 }
 
 #myVideo {
@@ -264,7 +285,7 @@ footer .copyright {
   text-align: center;
   color: #fff;
   border-radius: 5px;
-  border: 1px solid #fff;
+  border: none;
   width: 70%;
   margin-bottom: 1rem;
 }
@@ -302,6 +323,69 @@ footer .copyright {
 }
 .about__main .section__history {
   margin-bottom: 4rem;
+}
+
+.contact__main {
+  min-height: 80vh;
+  width: 90%;
+  margin: 2rem auto;
+}
+.contact__main .contact__section {
+  max-width: 600px;
+}
+.contact__main .contact__section .title {
+  font-family: "Emilys Candy";
+  font-size: 2rem;
+  color: #fff;
+}
+.contact__main .contact__section .text {
+  font-size: 1.4rem;
+  color: #fff;
+}
+.contact__main .contact__section .form__container .form__label {
+  font-size: 1.4rem;
+  color: #fff;
+}
+.contact__main .contact__section .form__container .form__item {
+  margin: 2rem 0;
+}
+.contact__main .contact__section .form__container .form__item .form__input {
+  display: block;
+  width: 100%;
+  margin-top: 0.4rem;
+  height: 2.5rem;
+  padding: 0 5px;
+}
+.contact__main .contact__section .form__container .form__item .form__select {
+  color: #41238d;
+  padding: 5px 30px;
+  font-weight: 700;
+  display: block;
+}
+.contact__main .contact__section .form__container .form__item .form__select .select__option {
+  font-weight: 700;
+}
+.contact__main .contact__section .form__container .form__send {
+  margin-top: 1rem;
+  width: 180px;
+  height: 45px;
+  font-family: "Emilys Candy";
+  background-color: #a25ce0;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+.contact__main .contact__aside .title {
+  text-align: center;
+  font-family: "Emilys Candy";
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.contact__main .contact__aside .contact__iframe {
+  border-radius: 30px;
+  width: 100%;
 }
 
 @media (min-width: 576px) {
@@ -372,6 +456,32 @@ footer .copyright {
     font-size: 2.5rem;
   }
   .products__main .products__section .section__title {
+    font-size: 2.5rem;
+  }
+  .contact__main .contact__section {
+    max-width: 750px;
+  }
+  .contact__main .contact__section .title {
+    font-size: 2.5rem;
+  }
+  .contact__main .contact__section .text {
+    font-size: 1.6rem;
+  }
+  .contact__main .contact__section .form__container .form__label {
+    font-size: 1.4rem;
+    color: #fff;
+  }
+  .contact__main .contact__section .form__container .form__item {
+    margin: 4rem 0;
+  }
+  .contact__main .contact__section .form__container .form__item .form__select {
+    padding: 10px 40px;
+  }
+  .contact__main .contact__section .form__container .form__send {
+    width: 220px;
+    height: 60px;
+  }
+  .contact__main .contact__aside .title {
     font-size: 2.5rem;
   }
 }
@@ -452,6 +562,21 @@ footer .copyright {
   }
   .about__main .about__section .text__container .text {
     font-size: 1.8rem;
+  }
+  .contact__main .contact__section .title {
+    font-size: 3rem;
+  }
+  .contact__main .contact__section .text {
+    font-size: 1.8rem;
+  }
+  .contact__main .contact__section .form__container .form__item .form__input {
+    height: 3rem;
+  }
+  .contact__main .contact__section .form__container .form__item .form__select {
+    padding: 12px 50px;
+  }
+  .contact__main .contact__aside .title {
+    font-size: 3rem;
   }
 }
 

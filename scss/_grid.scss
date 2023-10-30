@@ -1,23 +1,56 @@
+// Grid vista productos
 .products__grid--container {
     display: grid;
     grid-template-columns: repeat(auto-fit, 320px);
     grid-template-rows: repeat(auto-fit, 600px);
-    grid-gap: 4rem;
+    grid-gap: 7rem;
     justify-content: center;
 }
 
 
-@media (min-width: 847px) {
+// Grid vista contacto
 
+.contact__grid {
+    display: grid;
+    gap: 6rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "contact__section"
+    "contact__aside";
+    
+    .contact__section {
+        grid-area: contact__section;
+    }
+
+    .contact__aside {
+        grid-area: contact__aside;
+    }
+}
+
+
+// media querie grid vista productos
+@media (min-width: 847px) {
     .products__grid--container {
         grid-gap: 6rem;
         justify-content: center;
     }
 }
 
+// media querie grid vista contacto
+@media (min-width: 992px) {
+    .contact__grid {
+        grid-template-columns: 1fr .5fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "contact__section contact__section contact__aside";
+    }
+}
 
+
+
+// media querie grid vista productos
 @media (min-width: 1470px) {
-
     .products__grid--container {
         grid-gap: 12rem;
         justify-content: center;

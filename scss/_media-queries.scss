@@ -123,6 +123,48 @@
 
     }
 
+    // estilos de la vista contacto
+
+    .contact__main {
+
+        .contact__section {
+            max-width: 750px;
+
+            .title {
+                font-size: map-get($font-sizes, m-title);
+            }
+
+            .text {
+                font-size: map-get($font-sizes, m-text);
+            }
+
+            .form__container {
+                .form__label {
+                    font-size: map-get($font-sizes, s-text);
+                    color: map-get($colores, title-color);
+                }
+
+                .form__item {
+                    margin: 4rem 0;
+
+                    .form__select {
+                        padding: 10px 40px;
+                    }
+                }
+                .form__send {
+                    width: 220px;
+                    height: 60px;
+                }
+            }
+        }
+
+        .contact__aside {
+            .title {
+                font-size: map-get($font-sizes, m-title);
+            }
+        }
+    }
+
 
 }
 
@@ -149,28 +191,35 @@
     // estilos de la vista productos
     .about__main {
         max-width: 1600px;
+
         .about__section {
             flex-direction: row;
             justify-content: space-around;
+
             .section__img {
                 width: 40%;
                 height: 700px;
             }
+
             .text__container {
                 width: 55%;
+
                 .section__title {
                     font-size: map-get($font-sizes, m-title);
                     margin-bottom: 5rem;
                 }
+
                 .text {
                     font-size: map-get($font-sizes, m-text);
                 }
             }
         }
+
         .section__chicken {
             .text__container {
                 order: 1;
             }
+
             .section__img {
                 order: 2;
             }
@@ -252,15 +301,48 @@
         .title {
             font-size: map-get($font-sizes, l-title);
         }
+
         .about__section {
             .text__container {
                 .section__title {
                     font-size: map-get($font-sizes, l-title);
                 }
+
                 .text {
                     font-size: map-get($font-sizes, l-text);
 
                 }
+            }
+        }
+    }
+
+    // estilos de la vista contacto
+
+    .contact__main {
+        .contact__section {
+
+            .title {
+                font-size: map-get($font-sizes, l-title);
+            }
+
+            .text {
+                font-size: map-get($font-sizes, l-text);
+            }
+
+            .form__container {
+                .form__item {
+                    .form__input {
+                        height: 3rem;
+                    }
+                    .form__select {
+                        padding: 12px 50px;
+                    }
+                }
+            }
+        }
+        .contact__aside {
+            .title {
+                font-size: map-get($font-sizes, l-title);
             }
         }
     }

@@ -1,0 +1,70 @@
+.contact__main {
+    min-height: 80vh;
+    width: 90%;
+    margin: 2rem auto;
+
+    .contact__section {
+        max-width: 600px;
+        .title {
+            font-family: map-get($fuentes, title-font);
+            font-size: map-get($font-sizes, s-title);
+            color: map-get($colores, title-color);
+        }
+
+        .text {
+            font-size: map-get($font-sizes, s-text);
+            color: map-get($colores, title-color);
+
+        }
+
+        .form__container {
+            .form__label {
+                font-size: map-get($font-sizes, s-text);
+                color: map-get($colores, title-color);
+            }
+
+            .form__item {
+                margin: 2rem 0;
+
+                .form__input {
+                    display: block;
+                    width: 100%;
+                    margin-top: .4rem;
+                    height: 2.5rem;
+                    padding: 0 5px;
+                }
+
+                .form__select {
+                    color: map-get($colores, principal-color);
+                    padding: 5px 30px;
+                    font-weight: 700;
+                    display: block;
+
+                    .select__option {
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .form__send {
+                margin-top: 1rem;
+                @include botones(#a25ce0, map-get($fuentes, title-font), #fff);
+            }
+        }
+    }
+
+    .contact__aside {
+        .title {
+            text-align: center;
+            font-family: map-get($fuentes, title-font);
+            font-size: map-get($font-sizes, s-title);
+            color: map-get($colores, title-color);
+            margin-bottom: 2rem;
+        }
+
+        .contact__iframe {
+            border-radius: 30px;
+            width: 100%;
+        }
+    }
+}
