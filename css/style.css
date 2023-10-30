@@ -388,6 +388,55 @@ footer .copyright {
   width: 100%;
 }
 
+.account__main {
+  width: 90%;
+  margin: 1.5rem auto;
+  min-height: 85vh;
+}
+.account__main .title {
+  text-align: center;
+  font-family: "Emilys Candy";
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.account__main .user__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.account__main .user__section .perfil__img {
+  max-width: 500px;
+  width: 80%;
+}
+.account__main .user__section .form__container {
+  margin-top: 1rem;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+}
+.account__main .user__section .form__container .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.account__main .user__section .form__container .form .form__input {
+  width: 100%;
+  margin: 1.5rem 0;
+  padding: 10px;
+}
+.account__main .user__section .form__container .edit__button {
+  width: 180px;
+  height: 45px;
+  font-family: "Emilys Candy";
+  background-color: #a25ce0;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+
 @media (min-width: 576px) {
   main {
     padding: 1rem;
@@ -483,6 +532,22 @@ footer .copyright {
   }
   .contact__main .contact__aside .title {
     font-size: 2.5rem;
+  }
+  .account__main .title {
+    font-size: 2.5rem;
+  }
+  .account__main .user__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .account__main .user__section .perfil__img {
+    max-width: 500px;
+    width: 80%;
+  }
+  .account__main .user__section .form__container .edit__button {
+    height: 55px;
+    width: 220px;
   }
 }
 @media (min-width: 1200px) {

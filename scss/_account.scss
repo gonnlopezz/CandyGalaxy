@@ -1,0 +1,45 @@
+.account__main {
+    width: 90%;
+    margin: 1.5rem auto;
+    min-height: 85vh;
+
+    .title {
+        text-align: center;
+        font-family: map-get($fuentes, title-font);
+        font-size: map-get($font-sizes, s-title);
+        color: map-get($colores, title-color);
+        margin-bottom: 2rem;
+    }
+
+    .user__section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .perfil__img {
+            max-width: 500px;
+            width: 80%;
+        }
+
+        .form__container {
+            margin-top: 1rem;
+            text-align: center;
+            width: 80%;
+            max-width: 500px;
+            .form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 2rem;
+                .form__input {
+                    width: 100%;
+                    margin: 1.5rem 0;
+                    padding: 10px;
+                }
+            }
+            .edit__button {
+                @include botones(#a25ce0, map-get($fuentes, title-font), #fff);
+            }
+        }
+    }
+}
