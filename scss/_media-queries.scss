@@ -193,6 +193,11 @@
                 }
             }
         }
+        .trolley__section {
+            .section__title {
+                font-size: map-get($font-sizes, m-title);
+            }
+        }
     }
 
 
@@ -374,6 +379,19 @@
 
         .contact__aside {
             .title {
+                font-size: map-get($font-sizes, l-title);
+            }
+        }
+    }
+
+    // estilos de la vista account
+
+    .account__main {
+        .title {
+            font-size: map-get($font-sizes, l-title);
+        }
+        .trolley__section {
+            .section__title {
                 font-size: map-get($font-sizes, l-title);
             }
         }

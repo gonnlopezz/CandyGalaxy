@@ -28,11 +28,23 @@
     }
 }
 
+// grid vista account
+
+.account__main {
+    .account__grid--container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 250px);
+        grid-template-rows: repeat(auto-fit, 4  450px);
+        grid-gap: 4rem;
+        justify-content: center;
+    }
+}
+
 
 // media querie grid vista productos
 @media (min-width: 847px) {
     .products__grid--container {
-        grid-gap: 6rem;
+        gap: 6rem;
         justify-content: center;
     }
 }
@@ -52,7 +64,7 @@
 // media querie grid vista productos
 @media (min-width: 1470px) {
     .products__grid--container {
-        grid-gap: 12rem;
+        gap: 12rem;
         justify-content: center;
     }
 }

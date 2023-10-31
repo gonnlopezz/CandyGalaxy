@@ -1,8 +1,9 @@
+// Estilos de la vista about
 .about__main {
     margin: 1rem auto;
     width: 90%;
     max-width: 800px;
-
+    // Título principal
     .title {
         font-family: map-get($fuentes, title-font);
         font-size: map-get($font-sizes, s-title);
@@ -10,24 +11,24 @@
         text-align: center;
         margin-bottom: 2rem;
     }
-
+    // Sección
     .about__section {
         display: flex;
         flex-direction: column;
-
+        // Imagen de la sección
         .section__img {
             width: 100%;
             border-radius: 15px;
             margin-bottom: 1rem;
         }
-
+        // Título de la sección
         .section__title {
             font-family: map-get($fuentes, title-font);
             font-size: map-get($font-sizes, s-title);
             color: map-get($colores, title-color);
             text-align: center;
         }
-
+        // Texto de la sección
         .text__container {
             .text {
                 font-size: map-get($font-sizes, s-text);
@@ -35,7 +36,7 @@
             }
         }
     }
-
+    // Sección historia
     .section__history {
         margin-bottom: 4rem;
     }

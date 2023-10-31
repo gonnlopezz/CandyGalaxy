@@ -1,23 +1,24 @@
+// Estilos de la vista contacto
 .contact__main {
     min-height: 80vh;
     width: 90%;
     margin: 2rem auto;
-
+    // Sección de contacto
     .contact__section {
         max-width: 600px;
-
+        // Título principal
         .title {
             font-family: map-get($fuentes, title-font);
             font-size: map-get($font-sizes, s-title);
             color: map-get($colores, title-color);
         }
-
+        // Texto
         .text {
             font-size: map-get($font-sizes, s-text);
             color: map-get($colores, title-color);
 
         }
-
+        // Formulario
         .form__container {
             .form__label {
                 font-size: map-get($font-sizes, s-text);
@@ -46,7 +47,7 @@
                     }
                 }
             }
-
+            // Botón enviar
             .form__send {
                 margin-top: 1rem;
                 @include botones(#a25ce0, map-get($fuentes, title-font), #fff);
@@ -57,8 +58,9 @@
             }
         }
     }
-
+    // Inicio del aside
     .contact__aside {
+        // Título del aside
         .title {
             text-align: center;
             font-family: map-get($fuentes, title-font);
@@ -66,7 +68,7 @@
             color: map-get($colores, title-color);
             margin-bottom: 2rem;
         }
-
+        // Aside de ubicación
         .contact__iframe {
             border-radius: 30px;
             width: 100%;

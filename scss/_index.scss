@@ -1,22 +1,13 @@
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 105%;
-    min-height: 100%;
-    transform: translateX(calc((100% - 100vw) / 2));
-    z-index: -2;
-}
-
+// estilos de la vista index
 .index__main {
     padding: 1rem;
-
+    // seccion principal
     .section__1 {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 4rem;
-
+        // imagen de la seccion principal
         .hero {
             height: 500px;
             width: 100%;
@@ -24,7 +15,7 @@
             border-radius: 15px;
             margin-bottom: 1.2rem;
         }
-
+        // titulo principal
         .title {
             font-family: map-get($fuentes, title-font);
             font-size: map-get($font-sizes, s-title);
@@ -42,6 +33,8 @@
         }
     }
 
+    // estilos de la sección de productos
+
     .section__2 {
         .title {
             color: #fff;
@@ -49,10 +42,10 @@
             font-size: map-get($font-sizes, s-title);
             text-align: center;
         }
-
+        // contenedor de las cards
         .card__container {
             border-radius: 30px;
-
+            // card
             .card__item {
                 display: flex;
                 flex-direction: column;
@@ -66,19 +59,19 @@
                 border-radius: 30px;
                 padding: 5px;
                 padding-bottom: 15px;
-
+                // imagen de la card
                 .card__img {
                     border-radius: 30px;
                     height: 60%;
                     margin-bottom: 10px;
                     width: 100%;
                 }
-
+                // titulo de la card
                 .card__title {
                     font-size: 1.5rem;
                     height: 2%;
                 }
-
+                // texto de la card
                 .card__text {
                     height: 28%;
                     font-size: 1.1rem;
@@ -87,7 +80,7 @@
                     padding: 1rem 0;
                     width: 90%;
                 }
-
+                // botón ver productos
                 .button__watch {
                     height: 10%;
                     @include botones(#a25ce0, map-get($fuentes, title-font), #fff);

@@ -1,32 +1,24 @@
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 105%;
-    min-height: 100%;
-    transform: translateX(calc((100% - 100vw) / 2));
-    z-index: -2;
-}
-
+// Estilos de la vista productos
 .products__main {
+    // Título principal
     .title {
         text-align: center;
         font-family: map-get($fuentes, title-font);
         font-size: map-get($font-sizes, s-title);
         color: map-get($colores, title-color);
     }
-
+    // Sección productos
     .products__section {
         width: 90%;
         margin: 4rem auto;
-
+        // Título de la seccion productos
         .section__title {
             text-align: center;
             font-family: map-get($fuentes, title-font);
             font-size: map-get($font-sizes, s-title);
             color: map-get($colores, title-color);
         }
-
+        // Card
         .product__card {
             margin: 2rem auto;
             width: 100%;
@@ -37,16 +29,17 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-
+            // Contenedor de la imagen y el titulo de la card
             .img__container {
                 width: 100%;
-
+                // Imagen de la card
                 .product__img {
                     width: 100%;
                     border-radius: 30px 30px 0 0;
                     height: 300px;
                 }
 
+                // Título de la card
                 .card__title {
                     text-align: center;
                     padding: 0 1rem;
@@ -55,11 +48,13 @@
                 }
             }
 
+            // Precio del producto
             .price {
                 font-size: 2rem;
                 font-weight: 700;
             }
 
+            // Botón de comprar
             .button__buy {
                 @include botones(#335e42, map-get($fuentes, title-font), #fff);
                 width: 70%;
