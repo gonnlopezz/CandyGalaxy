@@ -47,24 +47,26 @@
 @media (min-width: 992px) {
 
     // estilos del header
-    .nav-item {
-        margin-bottom: 0;
-    }
-
-    .nav__ul {
-        width: 90%;
-        justify-content: center;
-
+    .navbar {
         .nav-item {
-            width: 20%;
-            margin: 0;
-            text-align: center;
+            margin-bottom: 0;
         }
-    }
 
-    .nav__link--account {
-        width: 10%;
-        text-align: end;
+        .nav__ul {
+            width: 90%;
+            justify-content: center;
+
+            .nav-item {
+                width: 20%;
+                margin: 0;
+                text-align: center;
+            }
+        }
+
+        .nav__link--account {
+            width: 10%;
+            text-align: end;
+        }
     }
 
     // estilos del index
@@ -151,9 +153,10 @@
                         padding: 10px 40px;
                     }
                 }
+
                 .form__send {
+                    height: 55px;
                     width: 220px;
-                    height: 60px;
                 }
             }
         }
@@ -172,20 +175,21 @@
         .title {
             font-size: map-get($font-sizes, m-title);
         }
+
         .user__section {
             display: flex;
             flex-direction: column;
             align-items: center;
-    
+
             .perfil__img {
                 max-width: 500px;
                 width: 80%;
             }
-    
+
             .form__container {
                 .edit__button {
-                   height: 55px;
-                   width: 220px;
+                    height: 55px;
+                    width: 220px;
                 }
             }
         }
@@ -360,16 +364,20 @@
                     .form__input {
                         height: 3rem;
                     }
+
                     .form__select {
                         padding: 12px 50px;
                     }
                 }
             }
         }
+
         .contact__aside {
             .title {
                 font-size: map-get($font-sizes, l-title);
             }
         }
     }
+
+
 }

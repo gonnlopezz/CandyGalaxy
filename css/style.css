@@ -109,6 +109,9 @@ footer .main__content a {
   margin: 0.5rem 0.5rem;
   color: #fff;
 }
+footer .main__content a:hover {
+  color: #aaa;
+}
 footer .social__medias {
   text-align: center;
 }
@@ -221,6 +224,10 @@ footer .copyright {
   border-radius: 5px;
   border: none;
 }
+.index__main .section__2 .card__container .card__item .button__watch:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s;
+}
 
 #myVideo {
   position: fixed;
@@ -288,6 +295,9 @@ footer .copyright {
   border: none;
   width: 70%;
   margin-bottom: 1rem;
+}
+.products__main .products__section .product__card .button__buy:hover {
+  background: #203c2a;
 }
 
 .about__main {
@@ -376,6 +386,9 @@ footer .copyright {
   border-radius: 5px;
   border: none;
 }
+.contact__main .contact__section .form__container .form__send:hover {
+  background: #7f3cba;
+}
 .contact__main .contact__aside .title {
   text-align: center;
   font-family: "Emilys Candy";
@@ -436,6 +449,9 @@ footer .copyright {
   border-radius: 5px;
   border: none;
 }
+.account__main .user__section .form__container .edit__button:hover {
+  background: #7f3cba;
+}
 
 @media (min-width: 576px) {
   main {
@@ -458,19 +474,19 @@ footer .copyright {
   }
 }
 @media (min-width: 992px) {
-  .nav-item {
+  .navbar .nav-item {
     margin-bottom: 0;
   }
-  .nav__ul {
+  .navbar .nav__ul {
     width: 90%;
     justify-content: center;
   }
-  .nav__ul .nav-item {
+  .navbar .nav__ul .nav-item {
     width: 20%;
     margin: 0;
     text-align: center;
   }
-  .nav__link--account {
+  .navbar .nav__link--account {
     width: 10%;
     text-align: end;
   }
@@ -527,8 +543,8 @@ footer .copyright {
     padding: 10px 40px;
   }
   .contact__main .contact__section .form__container .form__send {
+    height: 55px;
     width: 220px;
-    height: 60px;
   }
   .contact__main .contact__aside .title {
     font-size: 2.5rem;

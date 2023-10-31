@@ -5,6 +5,7 @@
 
     .contact__section {
         max-width: 600px;
+
         .title {
             font-family: map-get($fuentes, title-font);
             font-size: map-get($font-sizes, s-title);
@@ -49,6 +50,10 @@
             .form__send {
                 margin-top: 1rem;
                 @include botones(#a25ce0, map-get($fuentes, title-font), #fff);
+
+                &:hover {
+                    background: #7f3cba;
+                }
             }
         }
     }

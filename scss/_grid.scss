@@ -15,10 +15,10 @@
     gap: 6rem;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
-    "contact__section"
-    "contact__aside";
-    
+    grid-template-areas:
+        "contact__section"
+        "contact__aside";
+
     .contact__section {
         grid-area: contact__section;
     }
@@ -42,8 +42,8 @@
     .contact__grid {
         grid-template-columns: 1fr .5fr 1fr;
         grid-template-rows: 1fr;
-        grid-template-areas: 
-        "contact__section contact__section contact__aside";
+        grid-template-areas:
+            "contact__section contact__section contact__aside";
     }
 }
 

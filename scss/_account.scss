@@ -39,6 +39,9 @@
             }
             .edit__button {
                 @include botones(#a25ce0, map-get($fuentes, title-font), #fff);
+                &:hover {
+                    background: #7f3cba;
+                }
             }
         }
     }
