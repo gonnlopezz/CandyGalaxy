@@ -237,6 +237,9 @@ footer .copyright {
   transition: transform 0.4s;
 }
 
+.products__main {
+  padding: 1rem;
+}
 .products__main .title {
   text-align: center;
   font-family: "Emilys Candy";
